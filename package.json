@@ -1,0 +1,24 @@
+{
+  "name": "ionic-web",
+  "description": "The website for the Ionic Discord bot. This includes the leaderboard.",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "author": "Ionic",
+  "license": "BSD-3-Clause",
+  "dependencies": {
+    "preact": "^10.13.1",
+    "react-circular-progressbar": "^2.1.0",
+    "react-router-dom": "^6.11.2"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.5.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.2"
+  }
+}
