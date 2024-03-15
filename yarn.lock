@@ -548,9 +548,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@preact/preset-vite@npm:^2.8.1":
-  version: 2.8.1
-  resolution: "@preact/preset-vite@npm:2.8.1"
+"@preact/preset-vite@npm:^2.8.2":
+  version: 2.8.2
+  resolution: "@preact/preset-vite@npm:2.8.2"
   dependencies:
     "@babel/plugin-transform-react-jsx": ^7.22.15
     "@babel/plugin-transform-react-jsx-development": ^7.22.5
@@ -562,10 +562,12 @@ __metadata:
     magic-string: 0.30.5
     node-html-parser: ^6.1.10
     resolve: ^1.22.8
+    source-map: ^0.7.4
+    stack-trace: ^1.0.0-pre2
   peerDependencies:
     "@babel/core": 7.x
     vite: 2.x || 3.x || 4.x || 5.x
-  checksum: 98a34ab520886966c1ccb6a6e7c50202a24e8a8c9fb99d7d6570a109e55f4fec2bc3eb8f42b944356b9a1eabc1019bba167be7412c86d0308feb534d51a916d0
+  checksum: f350964e9b701760d9aea99d29aeb17c2afb30c6887b0c744cb0ffc0ec2978cf90b6ae0b1f5f8113f7786bd3e1574885e84444662df859ba2058e99db2619b1d
   languageName: node
   linkType: hard
 
@@ -1417,7 +1419,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ionic-web@workspace:."
   dependencies:
-    "@preact/preset-vite": ^2.8.1
+    "@preact/preset-vite": ^2.8.2
     preact: ^10.19.6
     react-circular-progressbar: ^2.1.0
     react-router-dom: ^6.22.3
@@ -2058,12 +2060,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"source-map@npm:^0.7.4":
+  version: 0.7.4
+  resolution: "source-map@npm:0.7.4"
+  checksum: 01cc5a74b1f0e1d626a58d36ad6898ea820567e87f18dfc9d24a9843a351aaa2ec09b87422589906d6ff1deed29693e176194dc88bcae7c9a852dc74b311dbf5
+  languageName: node
+  linkType: hard
+
 "ssri@npm:^9.0.0":
   version: 9.0.1
   resolution: "ssri@npm:9.0.1"
   dependencies:
     minipass: ^3.1.1
   checksum: fb58f5e46b6923ae67b87ad5ef1c5ab6d427a17db0bead84570c2df3cd50b4ceb880ebdba2d60726588272890bae842a744e1ecce5bd2a2a582fccd5068309eb
+  languageName: node
+  linkType: hard
+
+"stack-trace@npm:^1.0.0-pre2":
+  version: 1.0.0-pre2
+  resolution: "stack-trace@npm:1.0.0-pre2"
+  checksum: 036a7a7edafae602b15e4c26a79ad9752d97d87be648b9c921a5d98c1426219c21784ee6aee3cff06ba555d238c30cd87b78b2d9ad537ac94df8b689ffc6b4b6
   languageName: node
   linkType: hard
 
