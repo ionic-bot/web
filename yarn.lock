@@ -1444,7 +1444,7 @@ __metadata:
   resolution: "ionic-web@workspace:."
   dependencies:
     "@preact/preset-vite": "npm:^2.8.2"
-    preact: "npm:^10.21.0"
+    preact: "npm:^10.22.0"
     react-circular-progressbar: "npm:^2.1.0"
     react-router-dom: "npm:^6.23.1"
     typescript: "npm:^5.4.5"
@@ -1839,10 +1839,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"preact@npm:^10.21.0":
-  version: 10.21.0
-  resolution: "preact@npm:10.21.0"
-  checksum: 10/2c5fd23460f0de4a18e6707bf0d7aa0e0a4447b94708098a549fb243fa8ba00c978da1d5914ff50b32cc27c8b69dcdd6234f28f6462f912d89b963efb8e1a410
+"preact@npm:^10.22.0":
+  version: 10.22.0
+  resolution: "preact@npm:10.22.0"
+  checksum: 10c0/dc5466c5968c56997e917580c00983cec2f6486a89ea9ba29f1bb88dcfd2f9ff67c8d561a69a1b3acdab17f2bb36b311fef0c348b62e89c332d00c674f7871f0
   languageName: node
   linkType: hard
 
