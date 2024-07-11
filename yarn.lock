@@ -555,9 +555,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@preact/preset-vite@npm:^2.8.3":
-  version: 2.8.3
-  resolution: "@preact/preset-vite@npm:2.8.3"
+"@preact/preset-vite@npm:^2.9.0":
+  version: 2.9.0
+  resolution: "@preact/preset-vite@npm:2.9.0"
   dependencies:
     "@babel/code-frame": "npm:^7.22.13"
     "@babel/plugin-transform-react-jsx": "npm:^7.22.15"
@@ -575,7 +575,7 @@ __metadata:
   peerDependencies:
     "@babel/core": 7.x
     vite: 2.x || 3.x || 4.x || 5.x
-  checksum: 10c0/984b47d24491d20ea9f0787adbef3515c3bd4cdfd77154cdb84e9038fabb5db09a0c76237557aff88b3da26cff6146ac616c2375579143fc511afcf7baf63927
+  checksum: 10c0/658e3dc048d1f1d8ad7cb1fef4a3db0f933be4e00d3d6cdfbd29fe7ec02341b3a26747520a5b261992923b3d3f49800c23a4d77da849e708a5c1ad9a920343b2
   languageName: node
   linkType: hard
 
@@ -1444,7 +1444,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ionic-web@workspace:."
   dependencies:
-    "@preact/preset-vite": "npm:^2.8.3"
+    "@preact/preset-vite": "npm:^2.9.0"
     preact: "npm:^10.22.1"
     react-circular-progressbar: "npm:^2.1.0"
     react-router-dom: "npm:^6.24.1"
