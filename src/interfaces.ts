@@ -18,7 +18,6 @@ export interface Role {
 export interface Member {
     id: string;
     username: string;
-    discriminator: string;
     avatar: string;
     xp: number;
     level: number;

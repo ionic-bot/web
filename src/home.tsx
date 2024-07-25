@@ -1,41 +1,18 @@
 export function Home() {
   return (
     <>
-      <h2>Unleash the Power of Discord with Our All-in-One Bot!</h2>
+      <h2>Title</h2>
       <br />
-      <p>
-        Welcome to Ionic, the ultimate Discord bot designed to revolutionize your server experience. Packed with an impressive array of features, Ionic is here to take your Discord community to new heights. Discover the power of moderation, entertainment, economy, ranking, and more, all within a single bot.
-        <br /><br />
-        <b>Master the Art of Moderation:</b>
-        <br />
-        Maintaining order and harmony in your server has never been easier. Ionic provides a comprehensive set of moderation commands, including ban, kick, mute, and warn. Keep unruly members in check and ensure a safe environment for everyone to enjoy.
-        <br /><br />
-        <b>Seamless Bing Chat Integration:</b>
-        <br />
-        Stay connected with the world outside Discord without ever leaving your server. Ionic's Bing chat integration brings the power of real-time search results and information directly to your fingertips. Engage in discussions, ask questions, and explore the vastness of the internet with ease.
-        <br /><br />
-        <b>Unleash Your Strategic Brilliance with Chess:</b>
-        <br />
-        Sharpen your mind and challenge your friends to intense battles of chess. Ionic offers a fully interactive chess experience right within Discord. Plan your moves, outsmart your opponents, and revel in the thrill of victory as you rise through the ranks.
-        <br /><br />
-        <b>Thriving Economy at Your Fingertips:</b>
-        <br />
-        Dive into the world of virtual wealth and prosperity with Ionic's comprehensive economy system. Take on jobs, invest in stocks, and try your luck with gambling. Watch your virtual fortune grow as you amass wealth, all while fostering an engaging and interactive community.
-        <br /><br />
-        <b>Climb the Ranks with User Ranking:</b>
-        <br />
-        Recognize and reward active members with Ionic's user ranking system. Gain experience points (XP) for sending messages and ascend the leaderboard ladder. Show off your dedication, compete with friends, and unlock exclusive perks along the way. Plus, our web leaderboard keeps you connected even when you're away from Discord.
-        <br /><br />
-        <b>Master the Power of Language with Ionic's Word Tracking:</b>
-        <br />
-        Unleash the strength of your words and rise to the top with Ionic's cutting-edge word tracking feature. Compete against fellow server members and showcase your linguistic prowess as you dominate the leaderboard. Witness the true might of your vocabulary as you track the frequency of specific words spoken by the server or individual users. Engage in friendly word battles, discover trending phrases, and revel in the satisfaction of being the linguistic champion of your community. With Ionic's word tracking, your words have the power to make a lasting impact.
-        <br /><br />
-        <b>Dynamic and Customizable Polls:</b>
-        <br />
-        Engage your community with custom polls tailored to your needs. Ionic's flexible poll system allows you to create questions and options that perfectly suit your server's interests. Gather opinions, make informed decisions, and let your members shape the direction of your community.
-        <br /><br />
-        Ready to take your Discord server to the next level? Join the Ionic revolution today and unlock the full potential of your community. Harness the power of moderation, entertainment, economy, ranking, and more—all within the grasp of a single bot. Elevate your Discord experience with Ionic, the epitome of versatility and engagement.
-      </p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quidem similique doloribus voluptatem quaerat quam id. Itaque sint odit et earum, nulla enim, distinctio, veniam adipisci quo cum nisi explicabo?</p>
+      <p>Aut reprehenderit vitae quae blanditiis repellat officia ipsum, natus saepe doloribus sint expedita excepturi accusamus veritatis eum nostrum quidem minus! Facilis delectus eaque eos ipsa fuga magni quisquam harum quam!</p>
+      <p>Optio accusamus asperiores odio in molestias! Dicta tempore voluptate assumenda. Nam est reprehenderit cupiditate sapiente dignissimos minus voluptatum hic quas odio excepturi, quasi sed earum possimus vel amet maxime nemo.</p>
+      <p>Iste cum deserunt asperiores ut dolores, nobis eum optio? In sapiente harum quis, ipsam delectus, ab atque voluptas dolorum consequatur, magnam deserunt officiis! Voluptas esse, quasi dolore minima provident laborum.</p>
+      <p>Nostrum qui adipisci voluptatem a nemo labore deleniti temporibus minima dignissimos, odit earum magnam impedit, inventore ducimus unde aperiam sint. Aliquid aliquam voluptas expedita eveniet quibusdam doloremque magni. Est, reiciendis?</p>
+      <p>Dolorem, excepturi et! Vero numquam ipsam, corrupti facere deserunt repellendus provident cupiditate. Sequi qui accusantium inventore odit nulla quas exercitationem velit, iure molestiae commodi quis. Laborum blanditiis velit laudantium asperiores.</p>
+      <p>Eveniet placeat voluptatibus a! Porro temporibus dolores expedita. Commodi officiis adipisci voluptatum qui dolorum, eligendi vitae reiciendis. Numquam illo veritatis explicabo, fugiat exercitationem inventore eos tenetur, velit maxime aliquam minima.</p>
+      <p>Repellat consequatur accusantium saepe aliquam sint? Vel dolorum et voluptatum consequuntur totam. Alias odio accusantium sunt temporibus laudantium recusandae, sed nam excepturi debitis cupiditate amet similique. Aperiam, commodi quaerat. Quod!</p>
+      <p>Adipisci non porro dolorum voluptates laudantium? Odio neque laudantium quos quaerat dignissimos esse non? Quo optio magni laborum delectus, voluptates aut illum iste minus libero in, quas vero porro sequi!</p>
+      <p>Earum magni in aut hic? Recusandae dolor odio, cumque rem quis, quia saepe aliquid corrupti aliquam natus expedita assumenda, adipisci aut necessitatibus. Ad neque delectus mollitia dicta eveniet nesciunt qui?</p>
       <a href={import.meta.env.VITE_DISCORD_INVITE_URL} alt="Add Ionic to your Discord server" class="inviteButton">Invite!</a>
     </>
   );

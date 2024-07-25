@@ -9,7 +9,7 @@ export function App() {
           <Link to="/"><img src={ionic} alt="Ionic's logo" class="logo" /></Link>
           <div class="textContainer">
             <h1>Ionic</h1>
-            <h3>Revolutionize Your Discord Experience</h3>
+            <h3>Like the gemstone, but open source!</h3>
           </div>
         </div>
         <div class="border"></div>

@@ -57,7 +57,7 @@ export function Leaderboard() {
                                 <h4>{rank}</h4>
                             </div>
                             <img src={'https://cdn.discordapp.com/avatars/' + member.id + '/' + member.avatar + '.png'} />
-                            <h3>{member.username}#{member.discriminator}</h3>
+                            <h3>{member.username}</h3>
                             <div class="right">
                                 <h5>{member.xp}<h5>XP</h5></h5>
                                 <div class="levelProgress">
