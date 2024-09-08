@@ -1,5 +1,6 @@
 {
   "name": "ionic-web",
+  "description": "The website for the Ionic Discord bot.",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,6 +9,8 @@
     "build": "tsc -b && vite build",
     "preview": "vite preview"
   },
+  "author": "Ionic",
+  "license": "BSD-3-Clause",
   "dependencies": {
     "solid-js": "^1.8.20"
   },
