@@ -1,22 +1,35 @@
-import { Link, Outlet } from 'react-router-dom';
-import ionic from './assets/ionic.png';
+import { createSignal } from 'solid-js'
+import solidLogo from './assets/solid.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
 
-export function App() {
+function App() {
+  const [count, setCount] = createSignal(0)
+
   return (
     <>
-      <nav>
-        <div class="logoContainer">
-          <Link to="/"><img src={ionic} alt="Ionic's logo" class="logo" /></Link>
-          <div class="textContainer">
-            <h1>Ionic</h1>
-            <h3>Like the gemstone, but open source!</h3>
-          </div>
-        </div>
-        <div class="border"></div>
-      </nav>
-      <main>
-        <Outlet />
-      </main>
+      <div>
+        <a href="https://vitejs.dev" target="_blank">
+          <img src={viteLogo} class="logo" alt="Vite logo" />
+        </a>
+        <a href="https://solidjs.com" target="_blank">
+          <img src={solidLogo} class="logo solid" alt="Solid logo" />
+        </a>
+      </div>
+      <h1>Vite + Solid</h1>
+      <div class="card">
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count()}
+        </button>
+        <p>
+          Edit <code>src/App.tsx</code> and save to test HMR
+        </p>
+      </div>
+      <p class="read-the-docs">
+        Click on the Vite and Solid logos to learn more
+      </p>
     </>
-  );
+  )
 }
+
+export default App
