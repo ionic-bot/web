@@ -1,7 +1,7 @@
 function Home() {
   return (
     <p>
-      Home
+      Welcome to Ionic!
     </p>
   )
 }

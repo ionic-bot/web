@@ -12,6 +12,7 @@
   "author": "Ionic",
   "license": "BSD-3-Clause",
   "dependencies": {
+    "@ionic-bot/solidjs-circular-progressbar": "^1.0.3",
     "@solidjs/router": "^0.14.3",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.45",
