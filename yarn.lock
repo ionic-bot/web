@@ -400,6 +400,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@ionic-bot/solidjs-circular-progressbar@npm:^1.0.3":
+  version: 1.0.3
+  resolution: "@ionic-bot/solidjs-circular-progressbar@npm:1.0.3"
+  peerDependencies:
+    solid-js: ^1.8.20
+  checksum: 54349c596f937095882967099171768efbdf4fdd2859a49c68584b0e3a2a703cef6ee659fe10e219f69a077b97020cf69d629cff9416b4c525245eeae5b5b03a
+  languageName: node
+  linkType: hard
+
 "@isaacs/cliui@npm:^8.0.2":
   version: 8.0.2
   resolution: "@isaacs/cliui@npm:8.0.2"
@@ -1413,6 +1422,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ionic-web@workspace:."
   dependencies:
+    "@ionic-bot/solidjs-circular-progressbar": ^1.0.3
     "@solidjs/router": ^0.14.3
     autoprefixer: ^10.4.20
     postcss: ^8.4.45
