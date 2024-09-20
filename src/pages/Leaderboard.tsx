@@ -85,7 +85,7 @@ function Leaderboard() {
         <div class="flex flex-col w-1/5 ">
           {(guild()?.roles.length ?? 0) > 0 ? <div class="rounded-xl p-4 mb-4 bg-[#F6E2F8]">
             <h2 class="text-xl font-bold">Role Rewards</h2>
-            {guild()?.roles.map(role => <h6 class="bg-white mt-2 p-2 rounded-xl" style={{
+            {guild()?.roles.map(role => <h6 class="bg-[#FEFBFE] mt-2 p-2 rounded-xl" style={{
               'color': role.color,
             }}>Level {role.level} - {role.name}</h6>)}
           </div> : null}
