@@ -1,11 +1,13 @@
-import { createEffect, createSignal } from "solid-js";
+import { createEffect, createSignal, lazy } from "solid-js";
 import { useParams } from "@solidjs/router"
 import { CircularProgressbarWithChildren } from '@ionic-bot/solidjs-circular-progressbar';
 import '@ionic-bot/solidjs-circular-progressbar/dist/styles.css';
+const Error = lazy(() => import("./Error"));
 import { GuildLeaderboard } from '../interfaces';
 
 function Leaderboard() {
   const [loaded, setLoaded] = createSignal(false);
+  const [failed, setFailed] = createSignal('');
   const [guild, setGuild] = createSignal<GuildLeaderboard>();
   let page = 0;
   const quantity = Math.floor((screen.availHeight / 64) + 64);
@@ -16,13 +18,17 @@ function Leaderboard() {
     fetch(import.meta.env.VITE_API_URL + '/leaderboard/' + params.guildId + '?page=' + page + '&quantity=' + quantity)
       .then(res => res.json())
       .then(json => {
-        setGuild(json);
-        page++;
-        setLoaded(true);
-      });
+        if (!json.error) {
+          setGuild(json);
+          page++;
+          setLoaded(true);
+        } else {
+          setFailed(json.error);
+        }
+      }).catch(() => setFailed('Network error.'));
 
     window.addEventListener('scroll', () => {
-      if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight && scrollDone) {
+      if (!failed && ((window.innerHeight + window.scrollY) >= document.body.offsetHeight && scrollDone)) {
         scrollDone = false
         fetch(import.meta.env.VITE_API_URL + '/leaderboard/' + params.guildId + '?page=' + page + '&quantity=' + quantity)
           .then(res => res.json())
@@ -39,7 +45,7 @@ function Leaderboard() {
     })
   }, []);
 
-  return (<>
+  return (<div class="flex flex-col grow">
     {loaded() ? <>
       <div class="bg-gradient-to-b from-[#EF8354] to-[#AF1B3F] rounded-xl p-4 mb-4">
         <div>
@@ -54,15 +60,15 @@ function Leaderboard() {
             const rank = i + 1;
             return (<div class="flex items-center bg-[#F6E2F8] rounded-xl p-2 m-1">
               <div class={'flex justify-center items-center w-8 h-8 rounded-full mr-4 ' + (rank === 1 ? 'bg-amber-400' : rank === 2 ? 'bg-zinc-300' : rank === 3 ? 'bg-amber-700 text-white' : 'bg-white')}>
-                <h6>{rank}</h6>
+                <p>{rank}</p>
               </div>
               <img class="h-16 w-16 bg-white rounded-full mr-4" src={'https://cdn.discordapp.com/avatars/' + member.id + '/' + member.avatar + '.png'} onError={event => event.currentTarget.src = 'https://cdn.discordapp.com/embed/avatars/1.png'} />
-              <h3 class="text-lg font-semibold">{member.username}</h3>
+              <p class="text-lg font-semibold">{member.username}</p>
               <div class="flex ml-auto items-center">
-                <h6 class="flex flex-col items-center text-sm mr-4">
+                <p class="flex flex-col items-center text-sm mr-4">
                   {member.xp}
-                  <p class="font-bold">XP</p>
-                </h6>
+                  <span class="font-bold">XP</span>
+                </p>
                 <div class="w-16 h-16">
                   <CircularProgressbarWithChildren value={(member.xp / (5 * Math.pow((member.level + 1), 2) + 50 * (member.level + 1) + 100)) * 100} styles={{
                     trail: {
@@ -72,10 +78,10 @@ function Leaderboard() {
                       stroke: '#224886'
                     }
                   }}>
-                    <h6 class="flex flex-col items-center text-sm">
+                    <p class="flex flex-col items-center text-sm">
                       {member.level}
-                      <p class="font-bold">LEVEL</p>
-                    </h6>
+                      <span class="font-bold">LEVEL</span>
+                    </p>
                   </CircularProgressbarWithChildren>
                 </div>
               </div>
@@ -84,19 +90,31 @@ function Leaderboard() {
         </div>
         <div class="flex flex-col w-1/5 ">
           {(guild()?.roles.length ?? 0) > 0 ? <div class="rounded-xl p-4 mb-4 bg-[#F6E2F8]">
-            <h2 class="text-xl font-bold">Role Rewards</h2>
-            {guild()?.roles.map(role => <h6 class="bg-[#FEFBFE] mt-2 p-2 rounded-xl" style={{
-              'color': role.color,
-            }}>Level {role.level} - {role.name}</h6>)}
+            <h2 class="text-xl font-bold flex items-center">
+              <i class="ph ph-trophy mr-2"></i>
+              Role Rewards
+            </h2>
+            {guild()?.roles.map(role => <div>
+              <p class="mt-2 text-sm">Level {role.level}</p>
+              <div class="bg-[#FEFBFE] p-2 rounded-xl inline-flex items-center">
+                <div class="inline-block w-4 min-w-4 h-4 mr-2 rounded-full" style={{
+                  'background-color': role.color,
+                }}></div>
+                <p class="break-all">{role.name}</p>
+              </div>
+            </div>)}
           </div> : null}
           <div class="rounded-xl p-4 bg-[#F6E2F8]">
-            <h2 class="text-xl font-bold">How do I get XP?</h2>
+            <h2 class="text-xl font-bold flex items-center">
+              <i class="ph ph-sparkle mr-2"></i>
+              How do I get XP?
+            </h2>
             <p>Every minute, you can get between <b>{guild()?.settings.minRange}</b> and <b>{guild()?.settings.maxRange}</b> XP by chatting on this server.</p>
           </div>
         </div>
       </div>
-    </> : <h2>Please wait...</h2>}
-  </>
+    </> : !failed ? <p>Please wait...</p> : <Error error={failed()}></Error>}
+  </div>
   )
 }
 
