@@ -1,5 +1,5 @@
 # Ionic Web
-The website for the Ionic Discord bot. WIP.
+The website for the Ionic Discord bot.
 
 
 [![CodeFactor](https://www.codefactor.io/repository/github/ionic-bot/web/badge)](https://www.codefactor.io/repository/github/ionic-bot/web)
