@@ -5,6 +5,8 @@ import '@ionic-bot/solidjs-circular-progressbar/dist/styles.css';
 const Error = lazy(() => import("./Error"));
 import { GuildLeaderboard } from '../interfaces';
 
+import colorPalette from '../../colorPalette.json';
+
 function Leaderboard() {
   const [loaded, setLoaded] = createSignal(false);
   const [failed, setFailed] = createSignal('');
@@ -49,7 +51,7 @@ function Leaderboard() {
 
   return (<div class="flex flex-col grow">
     {loaded() ? <>
-      <div class="bg-gradient-to-b from-[#EF8354] to-[#AF1B3F] rounded-xl p-4 mb-4">
+      <div class="bg-themeDarker rounded-xl p-4 mb-4">
         <div>
           <img class="rounded-xl mb-4 w-32 h-32" src={typeof guild()?.guild.icon === 'string' ? ('https://cdn.discordapp.com/icons/' + params.guildId + '/' + guild()?.guild.icon + '.png?size=128') : 'https://cdn.discordapp.com/embed/avatars/1.png'} />
           <h2 class="font-semibold text-3xl text-white">{guild()?.guild.name}</h2>
@@ -60,7 +62,7 @@ function Leaderboard() {
         <div class="flex flex-col w-4/5 mr-4">
           {guild()?.members.map((member, i) => {
             const rank = i + 1;
-            return (<div class="flex items-center bg-[#F6E2F8] rounded-xl p-2 m-1">
+            return (<div class="flex items-center bg-themeLight rounded-xl p-2 m-1">
               <div class={'flex justify-center items-center w-8 h-8 rounded-full mr-4 ' + (rank === 1 ? 'bg-amber-400' : rank === 2 ? 'bg-zinc-300' : rank === 3 ? 'bg-amber-700 text-white' : 'bg-white')}>
                 <p>{rank}</p>
               </div>
@@ -74,10 +76,10 @@ function Leaderboard() {
                 <div class="w-16 h-16">
                   <CircularProgressbarWithChildren value={(member.xp / (5 * Math.pow((member.level + 1), 2) + 50 * (member.level + 1) + 100)) * 100} styles={{
                     trail: {
-                      stroke: '#6C96DA'
+                      stroke: colorPalette.themeTertiary
                     },
                     path: {
-                      stroke: '#224886'
+                      stroke: colorPalette.themeDarker
                     }
                   }}>
                     <p class="flex flex-col items-center text-sm">
@@ -91,14 +93,14 @@ function Leaderboard() {
           })}
         </div>
         <div class="flex flex-col w-1/5 ">
-          {(guild()?.roles.length ?? 0) > 0 ? <div class="rounded-xl p-4 mb-4 bg-[#F6E2F8]">
+          {(guild()?.roles.length ?? 0) > 0 ? <div class="rounded-xl p-4 mb-4 bg-themeLight">
             <h2 class="text-xl font-bold flex items-center">
               <i class="ph ph-trophy mr-2"></i>
               Role Rewards
             </h2>
             {guild()?.roles.map(role => <div>
               <p class="mt-2 text-sm">Level {role.level}</p>
-              <div class="bg-[#FEFBFE] p-2 rounded-xl inline-flex items-center">
+              <div class="bg-themeLighter p-2 rounded-xl inline-flex items-center">
                 <div class="inline-block w-4 min-w-4 h-4 mr-2 rounded-full" style={{
                   'background-color': role.color,
                 }}></div>
@@ -106,7 +108,7 @@ function Leaderboard() {
               </div>
             </div>)}
           </div> : null}
-          <div class="rounded-xl p-4 bg-[#F6E2F8]">
+          <div class="rounded-xl p-4 bg-themeLight">
             <h2 class="text-xl font-bold flex items-center">
               <i class="ph ph-sparkle mr-2"></i>
               How do I get XP?
@@ -115,7 +117,7 @@ function Leaderboard() {
           </div>
         </div>
       </div>
-    </> : !failed ? <p>Please wait...</p> : <Error error={failed()}></Error>}
+    </> : !failed() ? <p>Please wait...</p> : <Error error={failed()}></Error>}
   </div>
   )
 }
