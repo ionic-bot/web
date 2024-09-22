@@ -1,4 +1,4 @@
-import { createEffect, createSignal, lazy } from "solid-js";
+import { onMount, createSignal, lazy } from "solid-js";
 import { useParams } from "@solidjs/router"
 import { CircularProgressbarWithChildren } from '@ionic-bot/solidjs-circular-progressbar';
 import '@ionic-bot/solidjs-circular-progressbar/dist/styles.css';
@@ -14,11 +14,13 @@ function Leaderboard() {
   let scrollDone = true;
   const params = useParams();
 
-  createEffect(() => {
+  onMount(() => {
     fetch(import.meta.env.VITE_API_URL + '/leaderboard/' + params.guildId + '?page=' + page + '&quantity=' + quantity)
       .then(res => res.json())
       .then(json => {
         if (!json.error) {
+          document.title = json?.guild.name + "'s leaderboard | Ionic";
+
           setGuild(json);
           page++;
           setLoaded(true);
@@ -43,7 +45,7 @@ function Leaderboard() {
         scrollDone = true
       }
     })
-  }, []);
+  });
 
   return (<div class="flex flex-col grow">
     {loaded() ? <>
