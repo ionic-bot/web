@@ -31,8 +31,8 @@ function App(props: any) {
   });
 
   return (
-    <div class="flex flex-col min-w-screen min-h-screen bg-[#FEFBFE]">
-      <nav class="flex flex-row items-center p-4 bg-white border-b border-[#EF8354]">
+    <div class="flex flex-col min-w-screen min-h-screen bg-themeLighter">
+      <nav class="flex flex-row items-center p-4 bg-white border-b border-themeDarker">
         <div class="flex flex-row items-center mr-8">
           <img src={ionicLogo} alt="Ionic logo" class="max-h-12 mr-4" />
           <h1 class="font-semibold text-4xl">Ionic</h1>
@@ -43,11 +43,11 @@ function App(props: any) {
           <li><a class="hover:underline" target="_blank" href={`https://discord.com/oauth2/authorize?client_id=${import.meta.env.VITE_DISCORD_CLIENT_ID}&permissions=8&integration_type=0&scope=bot`}>Invite</a></li>
           <li class="!ml-auto" style={!loaded() ? { visibility: 'hidden' } : {}}>
             {loggedInUser() ? (
-              <a href="#" class="bg-[#3066BE] hover:bg-[#2957A3] active:bg-[#224886] text-white px-6 py-4 rounded-full flex items-center">
+              <a href="#" class="bg-themePrimary hover:bg-themeSecondary active:bg-themeTertiary text-white px-6 py-4 rounded-full flex items-center">
                 <img class="h-6 w-6 bg-white rounded-full mr-2" src={'https://cdn.discordapp.com/avatars/' + loggedInUser()?.id + '/' + loggedInUser()?.avatar + '.png'} onError={event => event.currentTarget.src = 'https://cdn.discordapp.com/embed/avatars/1.png'}></img>
                 {loggedInUser()?.username}
               </a>) : (
-              <a href={`https://discord.com/oauth2/authorize?client_id=${import.meta.env.VITE_DISCORD_CLIENT_ID}&response_type=token&redirect_uri=${encodeURIComponent(`${window.location.origin}/callback`)}&scope=identify+guilds`} class="bg-[#3066BE] hover:bg-[#2957A3] active:bg-[#224886] text-white px-6 py-4 rounded-full flex items-center">
+              <a href={`https://discord.com/oauth2/authorize?client_id=${import.meta.env.VITE_DISCORD_CLIENT_ID}&response_type=token&redirect_uri=${encodeURIComponent(`${window.location.origin}/callback`)}&scope=identify+guilds`} class="bg-themePrimary hover:bg-themeSecondary active:bg-themeTertiary text-white px-6 py-4 rounded-full flex items-center">
                 <i class="ph ph-sign-in mr-2 text-2xl"></i>
                 Sign in
               </a>)}
