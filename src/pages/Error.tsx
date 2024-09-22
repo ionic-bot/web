@@ -1,4 +1,9 @@
+import { onMount } from "solid-js"
 import { A } from "@solidjs/router"
+
+onMount(() => {
+  document.title = 'Error | Ionic';
+});
 
 function Error(props: { error?: string }) {
   return (<div class="flex grow flex-col items-center justify-center">
