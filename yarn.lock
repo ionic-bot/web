@@ -550,26 +550,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@preact/preset-vite@npm:^2.9.1":
-  version: 2.9.1
-  resolution: "@preact/preset-vite@npm:2.9.1"
+"@preact/preset-vite@npm:^2.9.2":
+  version: 2.9.2
+  resolution: "@preact/preset-vite@npm:2.9.2"
   dependencies:
-    "@babel/code-frame": "npm:^7.22.13"
-    "@babel/plugin-transform-react-jsx": "npm:^7.22.15"
-    "@babel/plugin-transform-react-jsx-development": "npm:^7.22.5"
-    "@prefresh/vite": "npm:^2.4.1"
-    "@rollup/pluginutils": "npm:^4.1.1"
-    babel-plugin-transform-hook-names: "npm:^1.0.2"
-    debug: "npm:^4.3.4"
-    kolorist: "npm:^1.8.0"
-    magic-string: "npm:0.30.5"
-    node-html-parser: "npm:^6.1.10"
-    source-map: "npm:^0.7.4"
-    stack-trace: "npm:^1.0.0-pre2"
+    "@babel/code-frame": ^7.22.13
+    "@babel/plugin-transform-react-jsx": ^7.22.15
+    "@babel/plugin-transform-react-jsx-development": ^7.22.5
+    "@prefresh/vite": ^2.4.1
+    "@rollup/pluginutils": ^4.1.1
+    babel-plugin-transform-hook-names: ^1.0.2
+    debug: ^4.3.4
+    kolorist: ^1.8.0
+    magic-string: 0.30.5
+    node-html-parser: ^6.1.10
+    source-map: ^0.7.4
+    stack-trace: ^1.0.0-pre2
   peerDependencies:
     "@babel/core": 7.x
-    vite: 2.x || 3.x || 4.x || 5.x
-  checksum: 6c2f2a7f06b08b2bd817d493101c4654891d6b86f661d48e2fb0b1388289bc4cb40b11a9ab30f9a12f818a28a1b48d60d97b24b8d3376c317a9d8abe06a68b1e
+    vite: 2.x || 3.x || 4.x || 5.x || 6.x
+  checksum: 8/813594729a11aade7a3e8505b4835ec90bd1ccf867493ada791615df6d598324e4825fe6c5ee24ce74708c7fe1303e1d47b2c1f310196d3b84c8ee45765a6704
   languageName: node
   linkType: hard
 
@@ -1375,7 +1375,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ionic-web@workspace:."
   dependencies:
-    "@preact/preset-vite": ^2.9.1
+    "@preact/preset-vite": ^2.9.2
     preact: ^10.25.0
     react-circular-progressbar: ^2.1.0
     react-router-dom: ^7.0.1
