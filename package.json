@@ -14,7 +14,7 @@
   "dependencies": {
     "preact": "^10.25.0",
     "react-circular-progressbar": "^2.1.0",
-    "react-router-dom": "^7.0.1"
+    "react-router-dom": "^7.0.2"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.9.2",
