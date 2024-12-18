@@ -12,7 +12,7 @@
   "author": "Ionic",
   "license": "BSD-3-Clause",
   "dependencies": {
-    "preact": "^10.25.2",
+    "preact": "^10.25.3",
     "react-circular-progressbar": "^2.1.0",
     "react-router-dom": "^7.0.2"
   },

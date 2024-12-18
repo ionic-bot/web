@@ -1376,7 +1376,7 @@ __metadata:
   resolution: "ionic-web@workspace:."
   dependencies:
     "@preact/preset-vite": "npm:^2.9.3"
-    preact: "npm:^10.25.2"
+    preact: "npm:^10.25.3"
     react-circular-progressbar: "npm:^2.1.0"
     react-router-dom: "npm:^7.0.2"
     typescript: "npm:^5.7.2"
@@ -1766,10 +1766,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"preact@npm:^10.25.2":
-  version: 10.25.2
-  resolution: "preact@npm:10.25.2"
-  checksum: 10c0/03eb73164eb49a77c62cead2b9a951aa8bca39ccad58257f94353404b280465c60580c7bf32a3d44c8c24b24d7974c6db9807bafa69a6fc5dc9cdbd9a0e0df30
+"preact@npm:^10.25.3":
+  version: 10.25.3
+  resolution: "preact@npm:10.25.3"
+  checksum: 10c0/b555a844e5c1b8e4f1feeb6d2f083dc3d44c7b3029c5d723e02b44283d5323c08ce881009a84345a43d9ebbabbc8ccdb868201f81ab3d5be3405e3378eca70be
   languageName: node
   linkType: hard
 
@@ -2114,11 +2114,11 @@ __metadata:
 
 "typescript@patch:typescript@npm%3A^5.7.2#optional!builtin<compat/typescript>":
   version: 5.7.2
-  resolution: "typescript@patch:typescript@npm%3A5.7.2#optional!builtin<compat/typescript>::version=5.7.2&hash=5adc0c"
+  resolution: "typescript@patch:typescript@npm%3A5.7.2#optional!builtin<compat/typescript>::version=5.7.2&hash=5786d5"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 10/ff27fc124bceb8969be722baa38af945b2505767cf794de3e2715e58f61b43780284060287d651fcbbdfb6f917f4653b20f4751991f17e0706db389b9bb3f75d
+  checksum: 10c0/f3b8082c9d1d1629a215245c9087df56cb784f9fb6f27b5d55577a20e68afe2a889c040aacff6d27e35be165ecf9dca66e694c42eb9a50b3b2c451b36b5675cb
   languageName: node
   linkType: hard
 
