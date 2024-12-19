@@ -1380,7 +1380,7 @@ __metadata:
     react-circular-progressbar: "npm:^2.1.0"
     react-router-dom: "npm:^7.0.2"
     typescript: "npm:^5.7.2"
-    vite: "npm:^6.0.3"
+    vite: "npm:^6.0.4"
   languageName: unknown
   linkType: soft
 
@@ -2154,9 +2154,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^6.0.3":
-  version: 6.0.3
-  resolution: "vite@npm:6.0.3"
+"vite@npm:^6.0.4":
+  version: 6.0.4
+  resolution: "vite@npm:6.0.4"
   dependencies:
     esbuild: "npm:^0.24.0"
     fsevents: "npm:~2.3.3"
@@ -2202,7 +2202,7 @@ __metadata:
       optional: true
   bin:
     vite: bin/vite.js
-  checksum: 8/b6738c1f78dbd58bc4d56cb3aba96d4fabc095c61633bbeff8778fd5ab72c4040eda2609a10d4163553b52b5481ed2f8bb6eba862798ed8b8320d60d5d29a4e6
+  checksum: 10c0/b1808f99250980bb1dc7805897ecfced4913adc7b4fd1cf7912e034f3e24e3e97a751ca3410620428bf073070f0b46071b94c4241cf9fc88b12f2d9dcafd7619
   languageName: node
   linkType: hard
 
