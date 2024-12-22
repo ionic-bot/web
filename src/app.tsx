@@ -33,10 +33,12 @@ function App(props: any) {
   return (
     <div class="flex flex-col min-w-screen min-h-screen bg-themeLighter">
       <nav class="flex flex-row items-center p-4 bg-white border-b border-themeDarker">
+      <A end href="/">
         <div class="flex flex-row items-center mr-8">
           <img src={ionicLogo} alt="Ionic logo" class="max-h-12 mr-4" />
           <h1 class="font-semibold text-4xl">Ionic</h1>
         </div>
+      </A>
         <ul class="flex flex-row w-full space-x-4 text-xl items-center">
           <li><A class="hover:underline" activeClass="underline" end href="/">Home</A></li>
           <li><A class="hover:underline" activeClass="underline" href="/dashboard">Dashboard</A></li>
