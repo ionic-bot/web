@@ -1504,7 +1504,7 @@ __metadata:
     "@solidjs/router": ^0.15.2
     autoprefixer: ^10.4.20
     postcss: ^8.4.49
-    solid-js: ^1.9.3
+    solid-js: ^1.9.7
     tailwindcss: ^3.4.17
     typescript: ^5.7.2
     vite: ^6.1.6
@@ -2346,19 +2346,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"seroval-plugins@npm:^1.1.0":
-  version: 1.1.1
-  resolution: "seroval-plugins@npm:1.1.1"
+"seroval-plugins@npm:~1.3.0":
+  version: 1.3.2
+  resolution: "seroval-plugins@npm:1.3.2"
   peerDependencies:
     seroval: ^1.0
-  checksum: e1bf14bbdc6f2260068aa1f81d51c32cca3ff2990335382347d7dff8e28edc7109694b278c7dc3f7795586c999348300e40fa30fecd6fe7110bc4ba9a869c108
+  checksum: e6f79bae0c34c953a526178565ab76bb7003698a3807a564866d0566f0d403d861193912d5b1560e2723056448577e5c0e520c827d172a2f57f6dff2dda2e781
   languageName: node
   linkType: hard
 
-"seroval@npm:^1.1.0":
-  version: 1.1.1
-  resolution: "seroval@npm:1.1.1"
-  checksum: 1ef0c511a7c1c658f87da2845699ee9de374eec6ffd3e91c33f860220df048b9a39368e00d644c1444b4dafddbe1e2a627af5b8ec193be4147da42e82bee31dc
+"seroval@npm:~1.3.0":
+  version: 1.3.2
+  resolution: "seroval@npm:1.3.2"
+  checksum: 99bedbfa0ed6e3662d22a0fce016dc8d40d91fa4fc40e99cccd23af8645913a7e57cb186f411fbcc084bafaf726a67bf1585f273e6dc8f86806501fe8092f28a
   languageName: node
   linkType: hard
 
@@ -2413,14 +2413,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"solid-js@npm:^1.9.3":
-  version: 1.9.3
-  resolution: "solid-js@npm:1.9.3"
+"solid-js@npm:^1.9.7":
+  version: 1.9.7
+  resolution: "solid-js@npm:1.9.7"
   dependencies:
-    csstype: "npm:^3.1.0"
-    seroval: "npm:^1.1.0"
-    seroval-plugins: "npm:^1.1.0"
-  checksum: 943119e2878527a3983955a72b2c1396fc2ea416e0cf51ea1e03f501f1e98e069bb0e55e27af926b7ac417e5c5c0f4706a9f61865636c408759b94d584f662eb
+    csstype: ^3.1.0
+    seroval: ~1.3.0
+    seroval-plugins: ~1.3.0
+  checksum: 94d975040af5ea51647bd44bd5824ea6eba3f2298196e6ddd761cf2f353b42bde7be58c27c3d004e6e69757f5223d6934cdf870b4c705d41a1973a83810648f7
   languageName: node
   linkType: hard
 
