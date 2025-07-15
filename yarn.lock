@@ -535,10 +535,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@phosphor-icons/web@npm:^2.1.1":
-  version: 2.1.1
-  resolution: "@phosphor-icons/web@npm:2.1.1"
-  checksum: 4ef49f7c3fe95e3858341e0ca6c072ba48eb5acb36b1d7732b043d05bf53784d62520926d7e0b9a4760741e15d26844e2502d475fa1c1a025b3c9c676fb6a764
+"@phosphor-icons/web@npm:^2.1.2":
+  version: 2.1.2
+  resolution: "@phosphor-icons/web@npm:2.1.2"
+  checksum: fff97fe9c70381659aa55a4f5f515ddb6b8ce7eb7f24eaa0d83cb35e0da09f9125cd7c5b899c931783981c77c9b9a0742aefc6530d212b00caf0451952c9c68e
   languageName: node
   linkType: hard
 
@@ -1500,7 +1500,7 @@ __metadata:
   resolution: "ionic-web@workspace:."
   dependencies:
     "@ionic-bot/solidjs-circular-progressbar": ^1.0.3
-    "@phosphor-icons/web": ^2.1.1
+    "@phosphor-icons/web": ^2.1.2
     "@solidjs/router": ^0.15.3
     autoprefixer: ^10.4.20
     postcss: ^8.5.6
