@@ -689,12 +689,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@solidjs/router@npm:^0.15.2":
-  version: 0.15.2
-  resolution: "@solidjs/router@npm:0.15.2"
+"@solidjs/router@npm:^0.15.3":
+  version: 0.15.3
+  resolution: "@solidjs/router@npm:0.15.3"
   peerDependencies:
     solid-js: ^1.8.6
-  checksum: 80025539793aed7e2ee3c6db258918eac8d75c63b0e863e97f0eca9f5ac15d1becc1c361089693de83e05255a56db3982ea45d4fa7c6d989ef099b2a584a6e9b
+  checksum: 3707f5bc644837b443a1bfc97eae9da32c9f61a7978aa9a1b6f6c501baad3d85cfe09dd9908f2275919bd65064bc4c403e72b7613898d1ec56424b8cc37b9644
   languageName: node
   linkType: hard
 
@@ -1501,7 +1501,7 @@ __metadata:
   dependencies:
     "@ionic-bot/solidjs-circular-progressbar": ^1.0.3
     "@phosphor-icons/web": ^2.1.1
-    "@solidjs/router": ^0.15.2
+    "@solidjs/router": ^0.15.3
     autoprefixer: ^10.4.20
     postcss: ^8.4.49
     solid-js: ^1.9.7
