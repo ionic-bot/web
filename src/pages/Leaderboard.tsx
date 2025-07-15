@@ -5,8 +5,6 @@ import '@ionic-bot/solidjs-circular-progressbar/dist/styles.css';
 const Error = lazy(() => import("./Error"));
 import { GuildLeaderboard } from '../interfaces';
 
-import colorPalette from '../../colorPalette.json';
-
 function Leaderboard() {
   const [loaded, setLoaded] = createSignal(false);
   const [failed, setFailed] = createSignal('');
@@ -76,10 +74,10 @@ function Leaderboard() {
                 <div class="w-16 h-16">
                   <CircularProgressbarWithChildren value={(member.xp / (5 * Math.pow((member.level + 1), 2) + 50 * (member.level + 1) + 100)) * 100} styles={{
                     trail: {
-                      stroke: colorPalette.themeTertiary
+                      stroke: (getComputedStyle(document.documentElement)).getPropertyValue("--color-themeTertiary")
                     },
                     path: {
-                      stroke: colorPalette.themeDarker
+                      stroke: (getComputedStyle(document.documentElement)).getPropertyValue("--color-themeDarker")
                     }
                   }}>
                     <p class="flex flex-col items-center text-sm">
