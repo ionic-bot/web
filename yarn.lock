@@ -493,10 +493,10 @@
   resolved "https://registry.yarnpkg.com/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.46.2.tgz#87079f137b5fdb75da11508419aa998cc8cc3d8b"
   integrity sha512-CvUo2ixeIQGtF6WvuB87XWqPQkoFAFqW+HUo/WzHwuHDvIwZCtjdWXoYCcr06iKGydiqTclC4jU/TNObC/xKZg==
 
-"@solidjs/router@^0.15.3":
-  version "0.15.3"
-  resolved "https://registry.yarnpkg.com/@solidjs/router/-/router-0.15.3.tgz#2c5e7aa637980ab7fce956aedc8cd20614163f2a"
-  integrity sha512-iEbW8UKok2Oio7o6Y4VTzLj+KFCmQPGEpm1fS3xixwFBdclFVBvaQVeibl1jys4cujfAK5Kn6+uG2uBm3lxOMw==
+"@solidjs/router@^0.15.4":
+  version "0.15.4"
+  resolved "https://registry.yarnpkg.com/@solidjs/router/-/router-0.15.4.tgz#e2b2d797541dcbdc36641e5f610f93ab4fa11c8a"
+  integrity sha512-WOpgg9a9T638cR+5FGbFi/IV4l2FpmBs1GpIMSPa0Ce9vyJN7Wts+X2PqMf9IYn0zUj2MlSJtm1gp7/HI/n5TQ==
 
 "@tailwindcss/node@4.1.17":
   version "4.1.17"
