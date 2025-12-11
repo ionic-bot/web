@@ -15,7 +15,7 @@
     "@ionic-bot/solidjs-circular-progressbar": "^1.0.3",
     "@phosphor-icons/web": "^2.1.2",
     "@solidjs/router": "^0.15.4",
-    "@tailwindcss/vite": "^4.1.17",
+    "@tailwindcss/vite": "^4.1.18",
     "autoprefixer": "^10.4.22",
     "solid-js": "^1.9.10",
     "tailwindcss": "^4.1.18"
