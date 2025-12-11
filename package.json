@@ -18,7 +18,7 @@
     "@tailwindcss/vite": "^4.1.17",
     "autoprefixer": "^10.4.22",
     "solid-js": "^1.9.10",
-    "tailwindcss": "^4.1.12"
+    "tailwindcss": "^4.1.18"
   },
   "devDependencies": {
     "typescript": "^5.9.3",
