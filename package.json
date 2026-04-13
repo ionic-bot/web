@@ -16,7 +16,7 @@
     "@phosphor-icons/web": "^2.1.2",
     "@solidjs/router": "^0.16.1",
     "@tailwindcss/vite": "^4.2.2",
-    "autoprefixer": "^10.4.27",
+    "autoprefixer": "^10.5.0",
     "solid-js": "^1.9.12",
     "tailwindcss": "^4.2.2"
   },
