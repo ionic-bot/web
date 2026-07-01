@@ -17,7 +17,7 @@
     "@solidjs/router": "^0.16.1",
     "@tailwindcss/vite": "^4.3.2",
     "autoprefixer": "^10.5.2",
-    "solid-js": "^1.9.13",
+    "solid-js": "^1.9.14",
     "tailwindcss": "^4.3.2"
   },
   "devDependencies": {
