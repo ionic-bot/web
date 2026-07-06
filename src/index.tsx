@@ -6,7 +6,7 @@ import { Router, Route, useLocation, Navigate } from "@solidjs/router";
 import './index.css';
 import '@phosphor-icons/web/regular';
 
-import App from './App';
+import App from './app';
 const DashboardHome = lazy(() => import("./pages/DashboardHome"));
 const Dashboard = lazy(() => import("./pages/Dashboard"));
 const Leaderboard = lazy(() => import("./pages/Leaderboard"));
