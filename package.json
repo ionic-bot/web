@@ -14,7 +14,7 @@
     "dependencies": {
         "@ionic-bot/solidjs-circular-progressbar": "^1.0.3",
         "@phosphor-icons/web": "^2.1.2",
-        "@solidjs/router": "^0.16.1",
+        "@solidjs/router": "^0.16.2",
         "@tailwindcss/vite": "^4.3.2",
         "autoprefixer": "^10.5.3",
         "solid-js": "^1.9.14",
