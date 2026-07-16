@@ -965,7 +965,7 @@ __metadata:
     "@tailwindcss/vite": ^4.3.3
     autoprefixer: ^10.5.4
     solid-js: ^1.9.14
-    tailwindcss: ^4.3.2
+    tailwindcss: ^4.3.3
     typescript: ^6.0.3
     vite: ^8.1.5
     vite-plugin-solid: ^2.11.12
@@ -1415,17 +1415,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tailwindcss@npm:4.3.3":
+"tailwindcss@npm:4.3.3, tailwindcss@npm:^4.3.3":
   version: 4.3.3
   resolution: "tailwindcss@npm:4.3.3"
   checksum: 8/26ed481f922a700e9f7b48de29d7d6ad07d1457a475d14391f9fca676b72e1aded478a60640e4104e8b04508659af0141f6ffbb14fe482eac7d418c511c7fa08
-  languageName: node
-  linkType: hard
-
-"tailwindcss@npm:^4.3.2":
-  version: 4.3.2
-  resolution: "tailwindcss@npm:4.3.2"
-  checksum: 5a377846f77590812df234446175c4c2a45111a9626fd135e46f4552a33faee0d10c4e51aa5bbec955583265d48b380fb66c96f5da2775c961d4c26157617d19
   languageName: node
   linkType: hard
 
